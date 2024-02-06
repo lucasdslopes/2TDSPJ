@@ -18,6 +18,7 @@ references pais(id_pais);
 alter table cidade add constraint fk_cidade_est foreign key(id_estado) 
 references estado(id_estado);
 
+
 create table bairro(id_bairro number primary key,
                     nome varchar2(30),
                     id_pais number,
